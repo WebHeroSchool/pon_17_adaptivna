@@ -34,5 +34,91 @@
 	}
 }
 
+.menu {
+	display: flex;
+	justify-content: flex-end;
+	background-color: black;
+}
 
+.menu__link {
+	padding: 15px 10px;
+	text-decoration:none;
+	text-align:center;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 70 0 0 0px;
+}
 
+header:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+}
+
+.burger {
+	display: none;
+}
+
+.wrap__text {
+	position: absolute;
+	margin: 200px;
+	text-align: center;
+}
+
+@media (max-width: 1281px) {
+	.menu { justify-content: space-around; }
+	.menu__link { flex-grow: 1; }
+	.burger { display: block; }
+}
+
+@media (max-width: 641px) {
+	header {
+		height: 50px;
+	}
+	.burger {
+		display: block;
+		position: absolute;
+		width: 30px;
+		height: 20px;
+		z-index: 3;
+		margin: 5px;
+	}
+	.burger span {
+		position: absolute;
+		background-color: #fff;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		top: 9px;
+	}
+	.burger:before,
+	.burger:after {
+		content: '';
+		background-color: #fff;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+	}
+	.burger:before {
+		top: 0;
+	}
+	.burger:after {
+		bottom: 0;
+	}
+		.menu { 
+			flex-direction: column;
+	 }
+	.menu__link {
+		flex-grow: 1;
+		top: 0;
+		width: 0;
+		width: 100%;
+		height: 100%;
+		visibility: hidden;
+	}
+}
