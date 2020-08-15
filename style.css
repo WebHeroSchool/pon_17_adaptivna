@@ -1,0 +1,38 @@
+@media (min-width:320px) {
+	.wrap__text {
+		font-size: 15px;
+	}
+}
+
+@media (min-width:481px) {
+	.wrap__text {
+		font-size: 32px;
+	}
+}
+
+@media (min-width:641px) {
+	.wrap__text {
+		font-size: 45px;
+	}
+}
+
+@media (min-width:961px) {
+	.wrap__text {
+		font-size: 52px;
+	}
+}
+
+@media (min-width:1025px) {
+	.wrap__text {
+		font-size: 60px;
+	}
+}
+
+@media (min-width:1281px) {
+	.wrap__text {
+		font-size: 76px;
+	}
+}
+
+
+
